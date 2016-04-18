@@ -1,6 +1,6 @@
 configuration:
-	projectName: haraldskrald-config
+  projectName: haraldskrald-config
 server:
-	port: 8000
+  port: 8000
 message:
-	greeting: hello is working good
+  greeting: hello is working good
