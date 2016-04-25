@@ -7,15 +7,15 @@ message:
 zuul:
   routes:
     tents:
-      url: http://tent-service:9000
+      url: http://tent-service:9001
       path: /tents/**
       stripPrefix: false
     bikes:
-      url: http://bike-service:9001
+      url: http://bike-service:9002
       path: /bikes/**
       stripPrefix: false
     hammers:
-      url: http://hammer-service:9002
+      url: http://hammer-service:9003
       path: /hammers/**
       stripPrefix: false
 
@@ -27,15 +27,15 @@ server:
 zuul:
   routes:
     tents:
-      url: http://localhost:9000
+      url: http://localhost:9001
       path: /tents/**
       stripPrefix: false
     bikes:
-      url: http://localhost:9001
+      url: http://localhost:9002
       path: /bikes/**
       stripPrefix: false
     hammers:
-      url: http://localhost:9002
+      url: http://localhost:9003
       path: /hammers/**
       stripPrefix: false
 debug: true
