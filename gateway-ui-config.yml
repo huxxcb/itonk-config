@@ -1,6 +1,41 @@
 configuration:
   projectname: gateway-ui-config
 server:
-  port: 8080
+  port: 80
 message:
   greeting: hello this is me, gateway-ui.
+zuul:
+  routes:
+    tents:
+      url: http://tent-service:9000
+      path: /tents/**
+      stripPrefix: false
+    bikes:
+      url: http://bike-service:9001
+      path: /bikes/**
+      stripPrefix: false
+    hammers:
+      url: http://hammer-service:9002
+      path: /hammers/**
+      stripPrefix: false
+
+---
+spring:
+  profiles: development
+server:
+  port: 8080
+zuul:
+  routes:
+    tents:
+      url: http://localhost:9000
+      path: /tents/**
+      stripPrefix: false
+    bikes:
+      url: http://localhost:9001
+      path: /bikes/**
+      stripPrefix: false
+    hammers:
+      url: http://localhost:9002
+      path: /hammers/**
+      stripPrefix: false
+debug: true
