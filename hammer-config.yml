@@ -1,6 +1,6 @@
 configuration:  
   projectName: hammer-config
 server:
-  port: 8003
+  port: 9003
 message:
   greeting: Hello from the hamme-configuration!
