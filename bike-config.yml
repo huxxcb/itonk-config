@@ -1,6 +1,6 @@
 configuration:  
   projectName: bike-config
 server:
-  port: 9002
+  port: 9001
 message:
   greeting: Hello from the bike-configuration!
