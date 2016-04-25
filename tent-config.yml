@@ -1,6 +1,6 @@
 configuration:  
   projectName: tent-config
 server:
-  port: 8001
+  port: 9000
 message:
   greeting: Hello from the tent-configuration!
