@@ -1,6 +1,6 @@
 configuration:
-	projectname: gateway-ui-config
+  projectname: gateway-ui-config
 server:
-	port: 9000
+  port: 8080
 message:
-	greeting: hello this is me, gateway-ui.
+  greeting: hello this is me, gateway-ui.
