@@ -32,7 +32,7 @@ zuul:
       stripPrefix: false
     bikes:
       url: http://localhost:9002
-      path: /**
+      path: /bikes/**
       stripPrefix: false
     hammers:
       url: http://localhost:9003
