@@ -1,7 +1,7 @@
 configuration:
   projectname: gateway-ui-config
 server:
-  port: 80
+  port: 8080
 message:
   greeting: hello this is me, gateway-ui.
 zuul:
